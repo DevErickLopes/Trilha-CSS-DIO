@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800; 1.100; 400;1.500 ; 1.700 ; 1.900 & display=swap');
+
+* {
+    margin: 0px;
+}
+
+body {
+    background: #F9F9F9;
+}
+
+header {
+    background: #FFF;
+}
+
+header nav {
+    display: flex;
+    width: auto;
+    height: 56px;
+    padding: 0px 24px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+div {
+    display: flex;
+}
+
+#left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+#center input.search-input {
+    width: 348px;
+    height: 40px;
+    border: 1px solid #CCC;
+    background: #FFF;
+    display: flex;
+}
+
+
+#center button {
+    width: 57px;
+    height: 40px;
+}
+
+#right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+main {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 28px 25px 403px 75px;
+
+}
+
+main p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
