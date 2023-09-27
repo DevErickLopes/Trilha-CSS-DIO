@@ -1,53 +1,83 @@
-@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800; 1.100; 400;1.500 ; 1.700 ; 1.900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background: #F9F9F9;
 }
 
-header {
-    background: #FFF;
+h1 {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-header nav {
+h2 {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+span {
+    color: #515151;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 510px;
+}
+
+.menu {
     display: flex;
     width: auto;
     height: 56px;
     padding: 0px 24px;
     justify-content: space-between;
     align-items: center;
-
+    background-color: #FFF;
 }
 
-div {
+.left {
+    width: auto;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.left .logo-youtube {
+    margin-left: 32px;
+}
+
+.center {
     display: flex;
+    flex-direction: row;
+
 }
 
-#left {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 24px;
+.center button img {
+    width: 57px;
+    height: 30px;
+    flex-shrink: 0;
 }
 
-#center input.search-input {
+.center input {
+    background: #FFF;
+    border: 0.5px solid;
     width: 348px;
     height: 40px;
-    border: 1px solid #CCC;
-    background: #FFF;
-    display: flex;
+    flex-shrink: 0;
 }
 
-
-#center button {
-    width: 57px;
-    height: 40px;
-}
-
-#right {
+.right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -56,20 +86,114 @@ div {
 
 main {
     display: inline-flex;
+}
+
+.watching-video {
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin: 28px 25px 194px 75px;
     gap: 16px;
-    margin: 28px 25px 403px 75px;
-
 }
 
-main p {
-    color: #000;
+.watching-video .video img {
+    width: auto;
+    height: 537px;
+    gap: 16px;
+}
+
+
+.video-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.video-actions .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.video-actions .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.info .inscreva-se {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 159px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #C00;
+    color: #FFF;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .button h2 {
+    margin-left: 8px;
+}
+
+.sidebar {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.sidebar .videos {
+    display: inline-flex;
+    height: 90px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.videos h2 {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.videos h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #515151;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 156px;
+    height: 28px;
+}
+
+.videos .infos {
+    width: 196px;
+    height: 89px;
 }
