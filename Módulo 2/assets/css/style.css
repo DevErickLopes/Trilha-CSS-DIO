@@ -3,10 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body {
     background: #F9F9F9;
+    width: 1440px;
+    height: 1024px;
 }
 
 h1 {
@@ -44,10 +47,13 @@ span {
     padding: 0px 24px;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFF;
+    flex-shrink: 0;
+    background: #FFF;
 }
 
 .left {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 24px;
     flex-shrink: 0;
@@ -59,22 +65,26 @@ span {
 
 .center {
     display: flex;
-    flex-direction: row;
-
-}
-
-.center button img {
-    width: 57px;
-    height: 30px;
+    width: 404px;
+    height: 40px;
     flex-shrink: 0;
 }
 
+.center img {
+    width: 57px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid #CCC;
+    background: #F8F8F8;
+}
+
+
 .center input {
-    background: #FFF;
-    border: 0.5px solid;
     width: 348px;
     height: 40px;
     flex-shrink: 0;
+    border: 1px solid #CCC;
+    background: #FFF;
 }
 
 .right {
